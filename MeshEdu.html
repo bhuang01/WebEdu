@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<img src = "meshlogo.jpg" style="width:400px;height:175px;>
+<head>
+    <title>AMC 10/12 PREP</title>
+</head>
+
+<div style = "background-color:#b5dcb3; width:100%">
+    <center>
+        <b><p style="font-family: 'Euphemia UCAS';font-size: 40px;">MESH Education</p></b>
+        <p style = "font-family:georgia,garamond,serif;font-size:20px;font-style:italic;">
+        Math TUTORIALS
+        </p>
+    </center>
+</div>
+<img src="https://previews.123rf.com/images/intararit/intararit1604/intararit160400002/54579248-blackboard-with-math-and-science-by-writing-on-the-blackboard-.jpg" alt="Image N/A" class="center"
+     style="width:800px;height:400px;>
+
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</img>
+
+ <div style = "background-color:#aaa; height:200px; width:200px; float:left;">
+    <div><b>Main Menu</b></div>
+    <button type="button" onClick = subFuncAL()>ALGEBRA</button> <br />
+    <button type="button" onClick = subFuncGE()>GEOMETRY</button> <br />
+    <button type="button" onClick = subFuncCP()>COUNTING AND PROBABILITY</button> <br />
+    <button type="button" onClick = subFuncNT()>NUMBER THEORY</button> <br />
+    <button type="button" onClick = subFuncTest()>Take An End of Lecture Test</button>
+ </div>
+
+
+    <script>
+    function subFuncNT() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+
+        } else {
+            a.style.display = "none";
+        }
+    }
+    function subFuncAL() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (b.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "block";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+        } else {
+            b.style.display = "none";
+        }
+    }
+
+    function subFuncGE() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (c.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "block";
+            d.style.display = "none";
+            e.style.display = "none";
+        } else {
+            c.style.display = "none";
+        }
+    }
+    function subFuncCP() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (d.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "block";
+            e.style.display = "none";
+
+        } else {
+            d.style.display = "none";
+        }
+
+
+    }
+    function subFuncTest() {
+        let a = document.getElementById("Num");
+        let b = document.getElementById("Alg");
+        let c = document.getElementById("Geo");
+        let d = document.getElementById("Calc");
+        let e = document.getElementById("Test");
+        if (e.style.display === "none") {
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "block";
+
+        } else {
+            e.style.display = "none";
+        }
+    }
+</script>
+
+<div id = Alg style = "display:none">
+    <div style = "background-color:#eee; height:200px; width:200px; float:left;" >
+        <button type="button">ALGEBRA 1</button><br />
+        <button type="button">ALGEBRA 2 </button><br />
+
+    </div>
+</div>
+<div id = Geo style = "display:none">
+    <div style = "background-color:#eee; height:200px; width:200px; float:left;" >
+        <button type="button">Geo</button><br />
+        <button type="button">Trig</button><br />
+
+    </div>
+</div>
+
+<div id = Calc style = "display:none">
+    <div style = "background-color:#eee; height:200px; width:200px; float:left;" >
+        <button type="button" onClick = Count() >Counting</button><br />
+        <button type="button">Probability</button><br />
+    </div>
+</div>
+<div id = Num style = "display:none">
+    <div style = "background-color:#eee; height:200px; width:200px; float:left;" >
+        <button type="button">Number</button><br />
+        <button type="button">Theory</button><br />
+    </div>
+</div>
+
+<div id = Test style = "display:none">
+    <div style = "background-color:#eee; height:1500px; width:1200px; float:left;" >
+
+        <p> "1. A 25 foot ladder is placed against a vertical wall of a building. The foot of the ladder is 7 feet from the base of the building. If the top of the ladder slips 4 feet, then how much will the foot of the ladder slide?(AHSME)"</p>
+
+        <button onclick="myFunction1()">My Answer</button>
+
+        <p id="demo1"></p>
+
+        <script>
+            function myFunction1() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 8) {
+                document.getElementById("demo1").innerHTML =
+                    "Correct! You can move onto the next problem";
+            }else{
+                document.getElementById("demo1").innerHTML =
+                    "Incorrect! Try Again. ";
+            }
+            }
+        </script>
+
+        <p>2. Find the slope of a line passing through the points (0, 0) and (5, 10).
+        </p>
+
+        <button onclick="myFunction2()">My Answer</button>
+
+        <p id="demo2"></p>
+
+        <script>
+            function myFunction2() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 2) {
+                    document.getElementById("demo2").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo2").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+
+        </script>
+
+        <p>3. Point E is the midpoint of side CD in square ABCD and BE meets diagonal AC at F. The area of quadrilateral AFED is 45 What is the area of ABCD?(AMC 8)
+        </p>
+
+
+        <button onclick="myFunction3()">My Answer</button>
+
+        <p id="demo3"></p>
+
+        <script>
+            function myFunction3() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 108) {
+                    document.getElementById("demo3").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo3").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+
+        </script>
+
+        <img src="square.png" alt="Image N/A" class="center"
+             style="width:400px;height:400px;>
+              <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+        </img>
+
+        <p>4. After rationalizing the numerator of, (sqrt 3 - sqrt 2) / sqrt 3 what is the denominator in simplest form? (Show square root notation as # + sqrt #) (AHSME 1950, 10)</p>
+
+        <button onclick="myFunction4()">My Answer</button>
+
+        <p id="demo4"></p>
+
+        <script>
+            function myFunction4() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == "3 + sqrt 6") {
+                    document.getElementById("demo4").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo4").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <p>5. In the year 2001,, the United States will host the International Mathematical Olympiad. Let I, M and O be distinct positive integers such that the product I * M * O = 2001. What is the largest possible value of the sum I + M + O? (2000 AMC 12, 1)</p>
+
+        <button onclick="myFunction5()">My Answer</button>
+
+        <p id="demo5"></p>
+
+        <script>
+            function myFunction5() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 671) {
+                    document.getElementById("demo5").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo5").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <body>
+
+        <p>6. Let N be the largest positive integer with the following property: reading from left to right, each pair of consecutive digits of Nforms a perfect square. What are the leftmost three digits of N?(Aime II 2001, 1))</p>
+
+        <button onclick="myFunction6()">My Answer</button>
+
+        <p id="demo6"></p>
+
+        <script>
+            function myFunction6() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == 816) {
+                    document.getElementById("demo6").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo6").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <p>7. Evaluate (29 27/28) * (27 14/15) (Mixed numbers) Express your answer as a mixed number (1997 PMWC, I1)
+        </p>
+
+        <button onclick="myFunction7()">My Answer</button>
+
+        <p id="demo7"></p>
+
+        <script>
+            function myFunction7() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == "837 1/420") {
+                    document.getElementById("demo7").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo7").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+        <p>8. Determine the digit in the 623rd place after the decimal point in the repeating decimal for: 1/9 + 2/99 + 3/999 (1993 UNCO math contest II, 2)
+        </p>
+
+        <button onclick="myFunction8()">My Answer</button>
+
+        <p id="demo8"></p>
+
+        <script>
+            function myFunction8() {
+                var useranswer = prompt("Please enter your answer", "");
+                if (useranswer == "1") {
+                    document.getElementById("demo8").innerHTML =
+                        "Correct! You can move onto the next problem";
+                }else{
+                    document.getElementById("demo8").innerHTML =
+                        "Incorrect! Try Again. ";
+                }
+            }
+        </script>
+
+    </div>
+</div>
+
+
+<div style = "background-color:#b5dcb3; float:bottom; clear:both"; >
+    <center>
+        Copyright © 2019 MESH Education
+    </center>
+
+</div>
+</body>
+
+</html>
