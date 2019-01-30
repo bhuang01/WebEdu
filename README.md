@@ -1,2 +1,2 @@
 # WebEdu
-Educational website project for DV Hackathon.
+Educational website project for DV Hacks.
